@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+/* All Variable Starts */
+@theme {
+ --breakpoint-*: initial;
+  --breakpoint-sm: 570px;
+  --breakpoint-md: 720px;
+  --breakpoint-lg: 920px;
+  --breakpoint-xl: 1180px;
+  --breakpoint-xxl: 1500px;
+  --font-inter: "Inter", sans-serif;
+  --font-grotesk: "Space Grotesk", sans-serif;
+  --color-green: #22C55E;
+  --color-black: #05130A;
+  --color-blacktwo: #243049;
+  --color-bg: #0A0F1C;
+
+  --color-mud: #94A3B8;
+}
+/* All Variable End */
+
+@utility container{
+    @apply w-[1440px] mx-auto
+}
+
+@utility btn{
+    @apply py-[14px] rounded-2xl px-[24px] font-medium text-[15px] font-inter text-white bg-blacktwo
+}
+
+@utility mini{
+    @apply border-2 border-white/5 font-medium text-[15px] font-inter text-white bg-blacktwo/20 py-[2px] px-[10px] rounded-3xl}
+
+
+@utility subhead{
+    @apply font-inter font-medium text-[14px] py-3 text-green
+}
+
+@utility head{
+    @apply font-bold  text-white text-[48px] leading-[115%] w-[616px]
+}
+
+@utility pera{
+    @apply  text-mud text-[17px] py-4 font-inter leading-[170%] font-normal
+}
