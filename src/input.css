@@ -21,6 +21,10 @@
 
 
 
+@utility container{
+    @apply w-[1440px]
+}
+
 @utility btn{
     @apply py-[14px] rounded-2xl px-[24px] font-medium text-[15px] font-inter text-white bg-blacktwo
 }
