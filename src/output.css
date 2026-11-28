@@ -8,8 +8,6 @@
       "Segoe UI Symbol", "Noto Color Emoji";
     --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
       "Courier New", monospace;
-    --color-red-400: oklch(70.4% 0.191 22.216);
-    --color-red-800: oklch(44.4% 0.177 26.899);
     --color-black: #05130A;
     --color-white: #fff;
     --spacing: 0.25rem;
@@ -186,34 +184,8 @@
   .relative {
     position: relative;
   }
-  .container {
-    width: 100%;
-    @media (width >= 570px) {
-      max-width: 570px;
-    }
-    @media (width >= 720px) {
-      max-width: 720px;
-    }
-    @media (width >= 920px) {
-      max-width: 920px;
-    }
-    @media (width >= 1180px) {
-      max-width: 1180px;
-    }
-    @media (width >= 1500px) {
-      max-width: 1500px;
-    }
-    margin-inline: auto;
-    width: 1440px;
-  }
-  .mx-20 {
-    margin-inline: calc(var(--spacing) * 20);
-  }
   .mx-auto {
     margin-inline: auto;
-  }
-  .mt-2 {
-    margin-top: calc(var(--spacing) * 2);
   }
   .mt-2\.5 {
     margin-top: calc(var(--spacing) * 2.5);
@@ -263,9 +235,6 @@
   .grid {
     display: grid;
   }
-  .table {
-    display: table;
-  }
   .h-\[138px\] {
     height: 138px;
   }
@@ -278,29 +247,20 @@
   .h-full {
     height: 100%;
   }
-  .w-1 {
-    width: var(--spacing);
-  }
   .w-1\/2 {
     width: calc(1 / 2 * 100%);
   }
   .w-1\/3 {
     width: calc(1 / 3 * 100%);
   }
-  .w-79 {
-    width: calc(var(--spacing) * 79);
-  }
   .w-79\.5 {
     width: calc(var(--spacing) * 79.5);
-  }
-  .w-\[60px\] {
-    width: 60px;
   }
   .w-\[282px\] {
     width: 282px;
   }
-  .w-\[440px\] {
-    width: 440px;
+  .w-\[500px\] {
+    width: 500px;
   }
   .w-\[560px\] {
     width: 560px;
@@ -311,9 +271,6 @@
   .w-\[616px\] {
     width: 616px;
   }
-  .w-\[640px\] {
-    width: 640px;
-  }
   .w-\[680px\] {
     width: 680px;
   }
@@ -323,17 +280,14 @@
   .max-w-\[420px\] {
     max-width: 420px;
   }
-  .border-collapse {
-    border-collapse: collapse;
+  .max-w-\[1440px\] {
+    max-width: 1440px;
   }
   .transform {
     transform: var(--tw-rotate-x, ) var(--tw-rotate-y, ) var(--tw-rotate-z, ) var(--tw-skew-x, ) var(--tw-skew-y, );
   }
   .cursor-pointer {
     cursor: pointer;
-  }
-  .resize {
-    resize: both;
   }
   .resize-none {
     resize: none;
@@ -358,9 +312,6 @@
   }
   .justify-end {
     justify-content: flex-end;
-  }
-  .gap-2 {
-    gap: calc(var(--spacing) * 2);
   }
   .gap-2\.5 {
     gap: calc(var(--spacing) * 2.5);
@@ -388,9 +339,6 @@
   }
   .gap-x-15 {
     column-gap: calc(var(--spacing) * 15);
-  }
-  .gap-x-20 {
-    column-gap: calc(var(--spacing) * 20);
   }
   .gap-x-45 {
     column-gap: calc(var(--spacing) * 45);
@@ -442,19 +390,12 @@
   .rounded-xl {
     border-radius: var(--radius-xl);
   }
-  .border {
-    border-style: var(--tw-border-style);
-    border-width: 1px;
-  }
   .border-2 {
     border-style: var(--tw-border-style);
     border-width: 2px;
   }
   .border-\[\#243049\] {
     border-color: #243049;
-  }
-  .border-white {
-    border-color: var(--color-white);
   }
   .border-white\/10 {
     border-color: color-mix(in srgb, #fff 10%, transparent);
@@ -494,12 +435,6 @@
   }
   .bg-green {
     background-color: var(--color-green);
-  }
-  .bg-red-400 {
-    background-color: var(--color-red-400);
-  }
-  .bg-red-800 {
-    background-color: var(--color-red-800);
   }
   .bg-\[linear-gradient\(132deg\,\#111827_0\%\,\#0D3324_100\%\)\] {
     background-image: linear-gradient(132deg,#111827 0%,#0D3324 100%);
@@ -731,13 +666,6 @@
   .text-white {
     color: var(--color-white);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
-  }
   .transition-all {
     transition-property: all;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -936,11 +864,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @property --tw-duration {
   syntax: "*";
   inherits: false;
@@ -1046,7 +969,6 @@
       --tw-font-weight: initial;
       --tw-leading: initial;
       --tw-tracking: initial;
-      --tw-outline-style: solid;
       --tw-duration: initial;
       --tw-ease: initial;
       --tw-content: "";
